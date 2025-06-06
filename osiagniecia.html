@@ -1,25 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements - Sensei Lukasz Machura</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osiągnięcia - Sensei Łukasz Machura</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    nav {
+      float: left;
+      width: 30%;
+      background: #ccc;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 style="color: rgb(245, 20, 20);">Osiągnięcia Sensei Lukasz Machura</h1>
-        
-    </header>
-    <main>
-        <h2>Osiągnięcia Sensei Lukasz Machura</h2>
-        <ul>
-            <li>Jako pierwszy Polak w historii wystąpił na największych pokazach organizowanych przez ZNKR.</li>
-            <li>Zdobywca wielu medali na krajowych i międzynarodowych zawodach.</li>
-            <li>22 lata treningu w Iaido.</li>
-            <li>Trener od 2009 roku, prowadzący liczne kursy i seminaria.</li>
-            <li>Uznany za jednego z najlepszych nauczycieli Iaido w Polsce.</li>
-        </ul>
-    </main>
+
+<header>
+  <h2>Osiągnięcia Sensei Łukasz Machura</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Strona Glowna</a></li>
+      <li><a href="about.html">Filozofia nauczania</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>Lista osiągnięć</h2>
+    <ul>
+      <li>Pierwszy Polak, który wystąpił na największych pokazach ZNKR.</li>
+      <li>Zdobywca licznych medali na zawodach krajowych i międzynarodowych.</li>
+      <li>22 lata treningu Iaido na karku – i dalej ciśnie!</li>
+      <li>Trener od 2009 roku, prowadzący kursy i seminaria.</li>
+      <li>Uznany za jednego z top nauczycieli Iaido w Polsce.</li>
+    </ul>
+  </article>
+</section>
+
+<footer>
+  <p> footer</p>
+</footer>
+
 </body>
 </html>
